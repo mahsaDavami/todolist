@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/50a075954d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="C:\Users\ASUS\Downloads\avada\avada.bootstap\fontawesome-free-5.15.4-web">
+    <script src="https://kit.fontawesome.com/50a075954d.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+    <title>to-do List</title>
+
+</head>
+
+<body class="text-black bg-white" style="font-family: 'Roboto', sans-serif;">
+
+    <div id="myModal" class="modal">
+        <video id="advertising" class="video" autoplay></video>
+        <div>
+            <button type="button" id="closeAdBtn" class="closeAd" onclick="closeAdFunc();"><i
+                    class="fas fa-times"></i></button>
+
+        </div>
+    </div>
+
+
+    <div class="table align-items-center my-5">
+        <div class="innertable bg-white p-auto align-items-center text-center my-5 mx-auto b-1 rounded border-black d-block rounded-lg" style="width: 40%;">
+
+            <div class="top my-5 bg-secondary text-center text-white rounded h-30" style="">
+
+                <h2 class="mt-5 mb-1 d-inline-flex"><div class="d-block me-5">To Do List</div>
+                    <button title="add a task" type="button" id="add" class="add btn b-0 bg-secondary fs-3 text-white me-1 ms-auto"
+                    onclick="next_line(); document.getElementById('input').value = '';"><i
+                        class="fas fa-plus"></i></button>
+
+                </h2>
+
+                
+                <div id="inputDesktop" class="w-100" style="padding-bottom: 18%;"></div>
+               
+                <div id="reportage" class="report d-inline-flex bg-white mt-4 b-2 shadow position-absolute align-items-center text-center text-dark p-4 m-4 left-15 top-15 translate-middle rounded" style="z-index: 2; width:max-content;">
+
+                    <div class="report_box p-2 px-5">
+                        <div class="report_item">done</div>
+                        <div id="dones" class="report_item count"></div>
+                    </div>
+                    <div class="report_box p-2 px-5">
+                        <div class="report_item">deleted</div>
+                        <div id="deleted" class="report_item count"></div>
+                    </div>
+                    <div class="report_box p-2 px-5">
+                        <div class="report_item">total</div>
+                        <div id="totalTask" class="report_item count"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <ul id=list class="list-unstyled">
+
+            </ul>
+            <div class="mobile-input-modal" id="inputMobile">   
+            </div>
+
+            <script src="index.js"></script>
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body, ul, li, span, div {
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  color: black;
+  background-color: #ebe9e9; }
+
+/*# sourceMappingURL=main.css.map */

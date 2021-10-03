@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="sasSindex.css">
+    <script src="https://kit.fontawesome.com/50a075954d.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+
+    <title>to-do List</title>
+
+</head>
+
+<body>
+
+    <div id="myModal" class="modal">
+        <video id="advertising" class="video" autoplay></video>
+        <div>
+            <button type="button" id="closeAdBtn" class="closeAd" onclick="closeAdFunc();"><i
+                    class="fas fa-times"></i></button>
+
+        </div>
+    </div>
+
+
+    <div class="table">
+        <div class="innertable">
+
+            <div class="top">
+
+                <h2>To Do List
+                    <button title="add a task" type="button" id="add" class="add"
+                    onclick="next_line(); document.getElementById('input').value = '';"><i
+                        class="fas fa-plus"></i></button>
+
+                </h2>
+
+                
+                <div id="inputDesktop"></div>
+               
+                <div id="reportage" class="report">
+
+                    <div class="report_box">
+                        <div class="report_item">done</div>
+                        <div id="dones" class="report_item count"></div>
+                    </div>
+                    <div class="report_box">
+                        <div class="report_item">deleted</div>
+                        <div id="deleted" class="report_item count"></div>
+                    </div>
+                    <div class="report_box">
+                        <div class="report_item">total</div>
+                        <div id="totalTask" class="report_item count"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <ul id=list>
+
+            </ul>
+            <div class="mobile-input-modal" id="inputMobile">   
+            </div>
+
+            <script src="index.js"></script>
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
